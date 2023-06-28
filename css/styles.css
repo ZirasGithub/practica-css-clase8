@@ -1,0 +1,81 @@
+:root {
+  /* bg colors */
+
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-lg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+
+  /* text colors */
+
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  /* decoration */
+
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+
+/* ============================== */
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+}
+body {
+  background-color: var(--background);
+}
+
+/* ============ Clases ============ */
+
+.nav,
+.lista-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  gap: 2rem;
+}
+
+.lista-nav {
+  gap: 1rem;
+}
+.lista-nav a {
+  color: var(--text-gray);
+}
+
+/* ESTO SE VA A VER MÁS ADELANTE. */
+/* Se llama al primer hijo dentro del LI para darle más peso a la fuente. Y para agregarle le color blanco, se especifica aún más a que le quieremos agregar el color blanco.
+.lista-nav li:first-child > a {
+  font-weight: 600;
+  color: var(--text-white);
+} */
+/* CON LAS HERRAMIENTAS QUE TENEMOS AHORA, CONVIENE DARLE UNA CLASE A "HOME" Y A ESA CLASE DARLE EL TEXT WHITE */
+.lista-nav .active {
+  font-weight: 600;
+  color: var(--text-white);
+}
